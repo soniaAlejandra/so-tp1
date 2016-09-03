@@ -4,6 +4,7 @@
 typedef struct dccthread dccthread_t;
 
 #define DCCTHREAD_MAX_NAME_SIZE 256
+#define THREAD_STACK_SIZE (1<<16)
 
 /* `dccthread_init` initializes any state necessary for the
  * threadling library and starts running `func`.  this function
