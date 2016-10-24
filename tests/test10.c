@@ -19,6 +19,7 @@ void test(int cnt) {
 		dccthread_yield();
 	}
 	printf("global counter is 0x%x\n", global);
+	dccthread_wait(t);
 	dccthread_exit();
 }
 

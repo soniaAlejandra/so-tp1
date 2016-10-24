@@ -8,7 +8,7 @@ void test(int dummy)
 	sprintf(name, "test%d", dummy);
 	printf("parent of %s with parameter %d\n", name, dummy);
 	if(dummy == 1) return;
-	dccthread_t *tid = dccthread_create(name, test, dummy-1);
+	dccthread_create(name, test, dummy-1);
 }
 
 int main(int argc, char **argv)

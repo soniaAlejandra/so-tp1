@@ -15,7 +15,7 @@ void test2(int cnt)
 void test1(int cnt)
 {
 	dccthread_t *self = dccthread_self();
-	dccthread_t *tid = dccthread_create("aux", test2, cnt-1);
+	dccthread_create("aux", test2, cnt-1);
 	while(cnt > 0) {
 		printf("%s %d\n", dccthread_name(self), cnt);
 		cnt--;

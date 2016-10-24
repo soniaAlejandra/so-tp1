@@ -21,6 +21,7 @@ void test(int cnt) {
 		if(global & 0x2) { global |= 0x4; }
 	}
 	printf("global counter is 0x%x\n", global);
+	dccthread_wait(t);
 	dccthread_exit();
 }
 

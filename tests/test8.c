@@ -24,7 +24,7 @@ void test(int cnt)
 		dccthread_yield();
 		printf("%s waiting %s\n", dccthread_name(self), name);
 		dccthread_wait(t);
-		printf("%s continuing\n", dccthread_name(self), name);
+		printf("%s continuing\n", dccthread_name(self));
 	}
 	dccthread_exit();
 }

@@ -10,7 +10,7 @@ void test3b(int dummy)
 void test(int dummy)
 {
 	printf("entered %s with parameter %d\n", __func__, dummy);
-	dccthread_t *tid = dccthread_create("test3b", test3b, 0);
+	dccthread_create("test3b", test3b, 0);
 }
 
 int main(int argc, char **argv)
