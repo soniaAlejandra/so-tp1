@@ -1,6 +1,8 @@
 #ifndef __DCCTHREAD_HEADER__
 #define __DCCTHREAD_HEADER__
 
+#include <time.h>
+
 typedef struct dccthread dccthread_t;
 
 #define DCCTHREAD_MAX_NAME_SIZE 256
